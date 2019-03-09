@@ -10,7 +10,6 @@ const fs = require('fs');
 ///////////////////////////////////////////////////////////////////////////////
 
 client.config = {
-    TOKEN: cfg.config.BOT_TOKEN,
     OWNER_ID: cfg.config.OWNER_ID,
     PREFIX: cfg.config.PREFIX
 };
@@ -81,4 +80,4 @@ client.on ("message", async msg => {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-client.login(client.config.TOKEN);
+client.login(token);
