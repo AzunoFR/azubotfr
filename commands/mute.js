@@ -11,7 +11,7 @@ exports.execute = async (client, message, args) => {
     .setDescription("~Aide TEMP-MUTE~")
     .setThumbnail(micon)
     .setColor("#2802fc")
-    .addField("Comment temp-mute ?", `Pour cela, <@${message.author.id}> tu dois faire la commande: \n**__-tempmute__ __{membre}__ __{temps}__**`);
+    .addField("Comment temp-mute ?", `Pour cela, <@${message.author.id}> tu dois faire la commande: \n**__a!tempmute__ __{membre}__ __{temps}__**`);
 
     if(!tomute) return message.channel.send(helptempmuteEmbed);
     if(!message.member.hasPermission("MUTE_MEMBERS")) return message.channel.send("Vous n'avez pas la permission de faire ceci !");
