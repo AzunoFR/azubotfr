@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const cfg = require('./config.js');
-const token = cfg.config.BOT_TOKEN;
+const token = process.env.TOKEN;
 const prefix = cfg.config.PREFIX;
 const tool = require('./tool.js');
 const chalk = require('chalk');
